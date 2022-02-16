@@ -32,6 +32,8 @@ class MntSuccess extends \Magento\Framework\App\Action\Action
         //get request data
         $data = $this->getRequest()->getPostValue();
 
+        var_dump($data);
+        die();
         $paymentMethod->processSuccess($data);
         //return $this->resultPageFactory->create();
     }
